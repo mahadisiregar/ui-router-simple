@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>	
+    </thead>
+    <tbody>
+      <tr ng-repeat="mahasiswa in mahasiswas">
+      	<td><a ui-sref="detail-mahasiswa({id:mahasiswa.firstname})">{{mahasiswa.firstname}}</a></td>
+      	<td>{{mahasiswa.lastname}}</td>
+      	<td>{{mahasiswa.email}}</td>
+      </tr>
+    </tbody>
+</table>
